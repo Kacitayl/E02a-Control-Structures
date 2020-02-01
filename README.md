@@ -14,35 +14,65 @@ Comments in Python are marked by a # sign (for single-line comments) or three ma
 Edit README.md to answer the following questions:
 
 - Open main01.py. Before running it, what do you expect this program to do?
+# say "greetings!" and then ask "What is my favorite color?"
   - Now right click on the main1.py window and select “Run Python File in Terminal”. Click in the bottom panel, and answer the question. Describe what happened.
+  # it said "greetings!" and then asked "What is my favorite color?"
   - What do you think the program did with what you typed in answer to the question?
+  # nothing, the program just ended.
 - Open main02.py. Before running it, describe how this is different than main01.py.
+# This time there is a value to be assigned as the favorite color and the color will be repeated in the following line
+
   - What do you think the color = input() will do?
+  # assign the input as the color
   - Run the program in the terminal and answer the question. Did the program do what you expected?
+  # yes
 - Open main03.py. Before running it, describe how this is different than main02.py.
+# If the input is "red" the program will tell you "Correct". If it is not red then it will tell you to try again but the program will end.
   - What is happening on lines 9–12?
+  # two different conditions are being laid out. 
   - Why are lines 10 and 12 indented?
+  # because they are beginning a new block of executions to make if the condition is True.
   - Run the program and answer the question. What happens if you don’t capitalize Red?
+  # The if condition figures as False and executes the else condition.
   - What does this tell you about "color"?
+  # it is case sensitive
 - Open main04.py. Before running it, describe how this is different than main03.py.
+# It allows "Red" and "red" to make the if condition True
   - What problem is this trying to solve?
+  # Case sensitivity
   - Run the program and answer the question. What happens if you use some other capitalization scheme (i.e., “RED” or “reD“)?
+  # The if condition executes as False
 - Open main05.py. What do you expect line 9 to do?
+# attempt to allow and case variation of the word 'red'
   - What problem is it trying to solve?
+  # case sensitivity
   - Run the program and answer the question. What happens if you add spaces before or after the word (i.e., “ RED “ or “ red”)?
+  # The if condition evaluates to False
  - Open main06.py. How is line 9 different than in main05.py?
+ # it adds on .strip() after .lower()
    - What would you guess .strip() is doing?
+   # stripping the input of spaces
    - Run the program and answer the question. Is there another way of writing “red” that will break this logic?
+   # not that I can think of
  - Open main07.py. Before running this program, how do you expect this to be different than main06.py?
+ # You can enter "pink" for a response of "Close!"
    - What is happening on line 12?
+   # an elif condition is evaluating for an answer of "pink"
    - Run the program and answer the question.
  - Open main08.py. What is the purpose of line 9?
+ # it sets the begining number for number of iterations through the while condition
    - Why are lines 10–17 indented?
+   # Because they are part of the block for the while condition
    - Run the program. What would happen if line 10 were moved before line 9 (and no longer indented)?
+   # Im really not sure.
    - Make that change and run the program again. (To end any Python program, you can type ctrl-c)
+   # since the input is == red then it never goes through the while condition and just ends the program.
  - Open main09.py. What is happening on line 13?
+ # 1 is being added to the number of tries each iteration through the While condition
    - What is the purpose of “count”?
+   # to be able to tell you how many tries it took you at the end of the program
    - What is happening on line 22?
+   # There is no line 22. But on line 21 it is printing how many tries it took for you to guess the favorite color.
    - Run the program.
  - *Extra credit:* open main10.py. Add a comment to each line describing what it is doing (a comment follows a pound sign [#]).
  - *Extra credit:* open main11.py. What is happening on lines 6-11?
